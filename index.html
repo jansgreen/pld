@@ -80,7 +80,7 @@
         <div class="flex-shrink-0 dropdown ms-5">
           <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
             aria-expanded="false">
-            <img src="./static/img/perfil.jpg" alt="mdo" width="96" height="96"
+            <img src="./static/img/perfil.png" alt="mdo" width="96" height="96"
               class="border-warning border-4 rounded-circle ">
           </a>
           <ul class="dropdown-menu text-small shadow text-light">
@@ -97,7 +97,7 @@
 
   <main>
 
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="myCarousel" class="carousel slide d-none d-sm-block" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
           aria-label="Slide 1"></button>
@@ -168,17 +168,13 @@
                 </div>
 
                 <div class="col-12">
-                  <label for="address" class="form-label">Numero de la casa, nombre de la calle y barrio</label>
-                  <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                  <label for="address" class="form-label">Direccion</label>
+                  <input type="text" class="form-control" id="address" placeholder="Numero de la casa, nombre de la calle y barrio" required="">
                   <div class="invalid-feedback">
                     Please enter your shipping address.
                   </div>
                 </div>
 
-                <div class="col-12">
-                  <label for="address2" class="form-label">Direccion <span class="text-muted">(Optional)</span></label>
-                  <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                </div>
 
                 <div class="col-md-5">
                   <label for="country" class="form-label">Provincias</label>
@@ -245,8 +241,8 @@
                 <div class="row justify-content-md-center mt-5 mb-5">
 
                   <div class="col-sm-6">
-                    <label for="firstName" class="form-label">Emadronado por</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    <label for="firstName" class="form-label">Empadronado por</label>
+                    <input type="text" class="form-control" id="Empadronador" placeholder="" value="" required="">
                     <div class="invalid-feedback">
                       Nombre de su empadronador.
                     </div>
@@ -274,13 +270,12 @@
       <span class="mb-3 mb-md-0 text-muted"><a href="www.jansgreen.info" class="text-decoration-none text-reset"> &copy;
           <?php echo date('Y'); ?> www.jansgreen.inf Todos los derechos reservados.
         </a></span>
-              <span class="mb-3 mb-md-0 text-muted">jansgreen@gmail.com<i class="ms-1 fa-solid fa-envelope text-primary"></i></span>
     </div>
-
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex me-5">
-      <li class="ms-3"><a class="text-muted" href="linkedin.com/in/jansgreen"><i class="fa-brands fa-linkedin-in text-primary"></i></a></li>
-      <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/jansgreen"><i class="fa-brands fa-facebook text-primary"></i></a></li>
-    </ul>
+    <ul class="me-5 list-group list-group-horizontal">
+      <li class="ms-3 list-group-item">jansgreen@gmail.com<i class="ms-1 fa-solid fa-envelope text-primary"></i></li>
+      <li class="ms-3 list-group-item"><a class="text-muted" href="linkedin.com/in/jansgreen"><i class="fa-brands fa-linkedin-in text-primary"></i></a></li>
+      <li class="ms-3 list-group-item"><a class="text-muted" href="https://www.facebook.com/jansgreen"><i class="fa-brands fa-facebook text-primary"></i></a></li>
+      </ul>
   </footer>
   </div>
 
