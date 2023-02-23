@@ -5,7 +5,7 @@
   $mensaje = $_POST['mensaje'];
   
   // Configuración del correo electrónico
-  $destinatario = 'destinatario@example.com';
+  $destinatario = 'jansgreen@example.com';
   $asunto = 'Mensaje de formulario de contacto';
   $cuerpo = "Nombre: $nombre\nEmail: $email\nMensaje: $mensaje";
   $headers = "From: $email\r\nReply-To: $email\r\n";
